@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #1C6031;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    background: #33C1D7;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgb(12, 12, 9);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+.header{
+    background: #33C1D7;
+    border-bottom: #f0f0f0;
+    padding: 20px 40px;
+}
+.header h2{
+    margin: 0;
+}
+.form{
+    padding: 30px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: #F60002;
+}
+
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.form-control.success i.fa-check-circle{
+    visibility: visible;
+    color: green;
+}
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: #F60002;
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-control.error small{
+    visibility: visible;
+    color: #F60002;
+}
+.form button{
+    background: #0000BF;
+    color: #fff;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    display: block;
+    font-family: inherit;
+}
